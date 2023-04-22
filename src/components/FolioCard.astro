@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  img: string;
+  link: string;
+  description: string;
+}
+
+const { title, link, img, description } = Astro.props;
+---
+  <div class="card w-80 mt-8 bg-slate-200 dark:bg-slate-900 shadow-xl">
+    <figure><img src={img} /></figure>
+    <div class="card-body">
+      <a href={link}><h2 class="card-title">{title}</h2></a>
+      <p>{description}</p>
+      <div class="card-actions justify-end">
+        <!-- <div v-for="tag in _case.tags" class="badge badge-outline">{{ tag }}</div>  -->
+      </div>
+    </div>
+  </div>
