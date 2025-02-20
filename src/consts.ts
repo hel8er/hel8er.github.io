@@ -1,15 +1,15 @@
 import type { Metadata, Site, Socials } from "@types";
 
 export const SITE: Site = {
-  TITLE: "Blog",
-  DESCRIPTION: "My IT Blog",
+  TITLE: "hel8er.github.io",
+  DESCRIPTION: "Про IT",
   EMAIL: "alexander@helber.ru",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
-  TITLE: "Home",
+  TITLE: "Про IT",
   DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
 };
 
