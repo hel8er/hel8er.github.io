@@ -1,11 +1,13 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
+import AllTags from "@components/AllTags.astro";
 import { SITE, HOME, SOCIALS } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import TagCloud from "@components/TagCloud.astro";
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
@@ -31,12 +33,10 @@ const projects: CollectionEntry<"projects">[] = (
           <article class="space-y-4">
             <span>
               <p>
-                <li>Open Source</li>
-                <li>Сетевые технологии</li>
-                <li>WEB-разработка</li>
-                <li>WEB3</li>
+                opensource / сетевые технологии / web-разработка / web3
               </p>
             </span>
+            <AllTags/>
           </article>
         </section>
 
