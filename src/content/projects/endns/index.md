@@ -1,9 +1,9 @@
 ---
-title: "DNSec"
+title: "enDNS"
 description: "Минималистичный DoH-клиент"
 date: "02/25/2025"
 # demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/hel8er/dnsec"
+repoURL: "https://github.com/hel8er/endns"
 ---
 
 <!-- ![Astro Sphere](/astro-sphere.jpg) -->
